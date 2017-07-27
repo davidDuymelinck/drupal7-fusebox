@@ -1,0 +1,20 @@
+{
+  "name": "drupal7-fusebox",
+  "version": "1.0.0",
+  "description": "setup theme assets bundling with fuse-box",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "themes": "./node_modules/.bin/webpack"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "fuse-box": "^2.2.1",
+    "node-sass": "^4.5.3",
+    "typescript": "^2.4.2",
+    "typescript-loader": "^1.1.3",
+    "webpack": "^3.4.1",
+    "webpack-sass": "^2.2.1"
+  }
+}
