@@ -7,3 +7,5 @@ sites/*/private
 node_modules
 .idea
 .fusebox
+
+.idea/workspace.xml
