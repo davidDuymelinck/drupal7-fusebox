@@ -1,0 +1,29 @@
+#page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+          "header1 header2"
+          "main main"
+          "footer footer";
+}
+
+#header {
+  grid-area: header1;
+}
+
+#navigation {
+  grid-area: header2;
+}
+
+#main-wrapper {
+  grid-area: main;
+}
+
+#main {
+  display: flex;
+}
+
+#footer {
+  grid-area: footer;
+}

@@ -1,0 +1,10 @@
+name = My theme
+description = A theme with fuse-box asset generation.
+package = Custom
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/main.css
+
+scripts[] = js/main.js
+
