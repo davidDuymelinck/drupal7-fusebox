@@ -1,0 +1,34 @@
+#toolbar {
+  border-bottom: 1px solid var(--body-color);
+}
+
+#overlay-disable-message, .element-invisible, .toolbar-drawer, .toolbar-menu>:last-child {
+  display: none;
+}
+
+.toolbar-menu, #toolbar-user, #toolbar-menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.toolbar-menu {
+  flex-wrap: wrap;
+}
+
+#toolbar-home {
+  list-style-type: none;
+  width: 30%;
+}
+
+#toolbar-user {
+  width: 70%;
+}
+
+#toolbar-menu {
+  width: 100%;
+}
+
+#toolbar-user>li, #toolbar-menu>li {
+  margin-right: 2%;
+}
+
