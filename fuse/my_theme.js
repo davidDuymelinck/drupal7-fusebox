@@ -10,7 +10,7 @@ Sparky.task("config", () => {
     sourceMaps: !isProduction,
     debug: !isProduction,
     plugins: [
-      isProduction && QuantumPlugin()
+      isProduction && QuantumPlugin({bakeApiIntoBundle : 'main'})
     ]
   });
 
