@@ -1,0 +1,21 @@
+input[type="submit"] {
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  text-align: center;
+  text-decoration: none;
+  color: var(--button-color);
+  background-color: var(--button-bg-color-primary);
+  border-radius: var(--button-border-radius);
+  border: none;
+  height: var(--input-height);
+  line-height: 1;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: calc(var(--component-spacing) * .5) calc(var(--component-spacing) * .75);
+  box-shadow: var(--button-box-shadow);
+  cursor: pointer;
+  display: inline-block;
+  transition: .1s box-shadow, .1s background-color, .1s color;
+}
