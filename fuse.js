@@ -16,7 +16,7 @@ Sparky.task("config", () => {
         .instructions("> my_theme/index.ts");
 });
 
-const myThemeCSSConfig = { outFile: (file) => `sites/all/themes/my_theme/css/main.css` };
+const myThemeCSSConfig = { outFile: (file) => `sites/all/themes/my_theme/css/main.css`, inject: false };
 
 Sparky.task("default", ["config"], () => {
     myTheme.plugin(SassPlugin(), CSSPlugin(myThemeCSSConfig)).watch();
