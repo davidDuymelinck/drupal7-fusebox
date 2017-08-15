@@ -7,6 +7,7 @@ Sparky.task("config", () => {
         homeDir: "theme_assets",
         output: "$name.js",
         sourceMaps: !isProduction,
+        debug: !isProduction,
         plugins: [
             isProduction && UglifyJSPlugin()
         ]
@@ -20,7 +21,7 @@ const myThemeCSSConfig = { outFile: (file) => `sites/all/themes/my_theme/css/mai
 
 Sparky.task("default", ["config"], () => {
     myTheme.plugin(SassPlugin(), CSSPlugin(myThemeCSSConfig)).watch();
-    return fuse.run();
+    return fuse.run()
 });
 
 
