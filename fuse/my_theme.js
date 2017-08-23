@@ -30,7 +30,7 @@ Sparky.task("default", ["config"], () => {
 
 
 Sparky.task("live", ["set-production", "config"], () => {
-  main.plugin(SassPlugin({ outputStyle: 'compressed' }), CSSPlugin(myThemeCSSConfig));
+  main.plugin(SassPlugin({ outputStyle: 'compressed', sourceMap: false }), CSSPlugin(myThemeCSSConfig));
   return fuse.run();
 });
 
